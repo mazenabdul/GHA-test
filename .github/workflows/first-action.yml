@@ -4,7 +4,9 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Print First Name
-        run: echo "Mazen"
+      - name: Print First Name, then Hi
+        run: |
+          echo "Mazen"
+          echo "Hi"
       - name: Print Last Name
         run: echo "Abdul"
